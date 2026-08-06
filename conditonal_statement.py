@@ -14,40 +14,37 @@
 # print("Press 3 for deposit")
 # print("Press 4 for exit")
 
-# choice = input("Enter the choice(1-4): ")
+choice = input("Enter the choice(1-4): ")
+match choice:
+    case "1":
+        print("Your current balance is:", bank_balance)
 
-# match choice:
+    case "2":
+        amount = float(input("Enter amount to withdraw: "))
 
-#     case "1":
-#         print("Your current balance is:", bank_balance)
+        if amount <= 0:
+            print("Enter a valid amount.")
+        elif amount > bank_balance:
+            print("Insufficient balance!")
+        else:
+            bank_balance = bank_balance - amount
+            print("Amount withdrawn successfully")
+            print("Remaining balance:", bank_balance)
 
-#     case "2":
-#         amount = float(input("Enter amount to withdraw: "))
+    case "3":
+        amount = float(input("Enter amount to deposit: "))
 
-#         if amount <= 0:
-#             print("Enter a valid amount.")
-#         elif amount > bank_balance:
-#             print("Insufficient balance!")
-#         else:
-#             bank_balance = bank_balance - amount
-#             print("Amount withdrawn successfully")
-#             print("Remaining balance:", bank_balance)
+        if amount <= 0:
+            print("Enter a valid amount.")
+        else:
+            bank_balance = bank_balance + amount
+            print("Amount deposited successfully")
+            print("Updated balance:", bank_balance)
 
-#     case "3":
-#         amount = float(input("Enter amount to deposit: "))
-
-#         if amount <= 0:
-#             print("Enter a valid amount.")
-#         else:
-#             bank_balance = bank_balance + amount
-#             print("Amount deposited successfully")
-#             print("Updated balance:", bank_balance)
-
-#     case "4":
-#         print("Thank you for using the ATM. Goodbye!")
-
-#     case _:
-#         print("Invalid choice. Please select 1-4.")
+    case "4":
+        print("Thank you for using the ATM. Goodbye!")
+    case _:
+        print("Invalid choice. Please select 1-4.")
 
 ==============================================================================================================================================================================================================================================
 
@@ -60,15 +57,15 @@
 # No discount if below 500
 
 
-# purchase_amount=int(input("Enter the purchase amount:"))
-# if purchase_amount>1000:
-#     discount=purchase_amount*20/100
-#     print(f"You are eligible for 20% discount. Your discount is {discount} and your total amount is {purchase_amount-discount}")
-# elif purchase_amount>=500 and purchase_amount<=1000:
-#     discount=purchase_amount*10/100
-#     print(f"You are eligible for 10% discount. Your discount is {discount} and your total amount is {purchase_amount-discount}")
-# else:
-#     print(f"You are not eligible for any discount. Your purchase amount is {purchase_amount}")
+purchase_amount=int(input("Enter the purchase amount:"))
+if purchase_amount>1000:
+    discount=purchase_amount*20/100
+    print(f"You are eligible for 20% discount. Your discount is {discount} and your total amount is {purchase_amount-discount}")
+elif purchase_amount>=500 and purchase_amount<=1000:
+    discount=purchase_amount*10/100
+    print(f"You are eligible for 10% discount. Your discount is {discount} and your total amount is {purchase_amount-discount}")
+else:
+    print(f"You are not eligible for any discount. Your purchase amount is {purchase_amount}")
 ================================================================================================================================================================================================
 # Problem 3: Login System 
 # Simulate a basic login system where the user is first asked for their username.
