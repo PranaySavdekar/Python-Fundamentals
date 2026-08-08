@@ -7,12 +7,12 @@
 
 # Problem 1: ATM Simulation
 # WAP to simulate ATM operations using match-case (1 = Check Balance, 2 = Withdraw, 3 = Deposit, 4 = Exit).
-# bank_balance=99999
-
-# print("Press 1 for Checking Balance")
-# print("Press 2 for withdraw")
-# print("Press 3 for deposit")
-# print("Press 4 for exit")
+# ================================================================================================================================================
+bank_balance=99999
+print("Press 1 for Checking Balance")
+print("Press 2 for withdraw")
+print("Press 3 for deposit")
+print("Press 4 for exit")
 
 choice = input("Enter the choice(1-4): ")
 match choice:
@@ -33,7 +33,6 @@ match choice:
 
     case "3":
         amount = float(input("Enter amount to deposit: "))
-
         if amount <= 0:
             print("Enter a valid amount.")
         else:
@@ -45,9 +44,7 @@ match choice:
         print("Thank you for using the ATM. Goodbye!")
     case _:
         print("Invalid choice. Please select 1-4.")
-
-==============================================================================================================================================================================================================================================
-
+# ==============================================================================================================================================================================================================================================
 
 # Problem 2:
 # A retail store offers discounts based on the total purchase amount.
@@ -55,7 +52,7 @@ match choice:
 # 20% discount if above 1000
 # 10% discount if between 500 and 1000
 # No discount if below 500
-
+# ================================================================================================================================================
 
 purchase_amount=int(input("Enter the purchase amount:"))
 if purchase_amount>1000:
@@ -66,11 +63,12 @@ elif purchase_amount>=500 and purchase_amount<=1000:
     print(f"You are eligible for 10% discount. Your discount is {discount} and your total amount is {purchase_amount-discount}")
 else:
     print(f"You are not eligible for any discount. Your purchase amount is {purchase_amount}")
-================================================================================================================================================================================================
+    
+# ================================================================================================================================================================================================
 # Problem 3: Login System 
 # Simulate a basic login system where the user is first asked for their username.
 #  If the username is correct, then the program should ask for the password. If both are correct, grant access.
-
+# ================================================================================================================================================
 username="admin123"
 password="10987"
 
@@ -83,4 +81,4 @@ if user_name==username:
          print("Invalid password,Access Denied")
 else:
     print("Invalid Username")
-================================================================================================================================================================================================
+# ================================================================================================================================================================================================
