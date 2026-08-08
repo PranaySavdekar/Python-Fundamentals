@@ -13,8 +13,8 @@ This repository contains my Python learning progress, starting from the fundamen
 | Topic | Status |
 |-------|--------|
 | Conditional Statements & Match-Case | ✅ |
-| Loops | ⬜ |
-| Functions | ⬜ |
+| Loops | ✅ |
+| Functions | ✅ |
 | OOP | ⬜ |
 | File Handling | ⬜ |
 | Mini Projects | ⬜ |
