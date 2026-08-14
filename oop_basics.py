@@ -337,7 +337,37 @@ quiz1.submit_answer(False)
 
 quiz1.calculate_score()
 
+# ==============================================================================================================================================================
+# Problem 11: ATM Machine
+# Create an ATM class with balance.
+# Add methods to deposit, withdraw, and check balance.
+# ==============================================================================================================================================================
+
+class ATM:
+    def __init__(self, balance):
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount
+
+    def withdraw(self, amount):
+        if amount <= self.balance:
+            self.balance -= amount
+            print("Withdrawal successful")
+        else:
+            print("Insufficient balance")
+
+    def check_balance(self):
+        print(f"Balance: {self.balance}")
 
 
+atm1 = ATM(10000)
 
+atm1.check_balance()
+
+atm1.deposit(5000)
+atm1.check_balance()
+
+atm1.withdraw(3000)
+atm1.check_balance()
 # ==============================================================================================================================================================
