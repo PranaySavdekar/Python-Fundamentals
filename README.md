@@ -9,14 +9,24 @@ This repository contains my Python learning progress, starting from the fundamen
 * Improve problem-solving skills through regular practice.
 * Write clean, readable, and maintainable code.
 
-## 🚀 Progress
-| Topic | Status |
-|-------|--------|
-| Conditional Statements & Match-Case | ✅ |
-| Loops | ✅ |
-| Functions | ✅ |
-| OOP | ⬜ |
-| File Handling | ⬜ |
-| Mini Projects | ⬜ |
 
-⭐ This repository is updated regularly as I continue learning Python.
+## 🚀 Progress
+
+✅ Conditional Statements  
+✅ While Loops  
+✅ For Loops  
+✅ Nested Loops  
+✅ Functions  
+✅ Recursion  
+✅ String Manipulation  
+✅ Lists  
+✅ Tuples  
+✅ Sets  
+✅ Dictionaries  
+✅ OOP Basics  
+⬜ OOP Inheritance  
+⬜ File Handling  
+⬜ Exception Handling  
+
+⭐ Updated regularly as I learn.
+
